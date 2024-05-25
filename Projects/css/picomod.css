@@ -1,0 +1,17 @@
+nav div div ul li a {
+    background-color: transparent !important;
+}
+
+.np {
+    margin: 0;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #ff9800;
+    color: white;
+}
+
+.nav-space {
+    padding-top: 30px;
+}

@@ -1,0 +1,23 @@
+body > footer {
+    padding: 1rem;
+    background-color: #060606;
+}
+body > footer > p {
+    margin: 0 auto;
+    font-size: 18px;
+    color: #73828c;
+}
+
+html {
+    position: relative;
+    height: 100%
+}
+
+#page-container {
+    position: relative;
+    height: 100%
+}
+
+#page-content {
+    min-height: calc(100% - 140px)
+}

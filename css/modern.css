@@ -1,0 +1,215 @@
+@font-face {
+  font-display: swap;
+  font-family: "Fira Code";
+  src: url("webfonts/FiraCode.ttf") format("truetype");
+}
+:where(audio, canvas, iframe, img, svg, video) {
+  vertical-align: middle;
+}
+
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+[role=button] {
+  border-radius: 4px;
+  cursor: pointer;
+  background: #a328a9;
+  padding: 0.8rem 1rem;
+  color: white;
+  text-decoration: none !important;
+  transition: background 0.05s ease-in-out;
+  white-space: nowrap;
+}
+[role=button]:hover {
+  background: #772b94;
+}
+[role=button]:active {
+  background: #4b2e7e;
+  color: white;
+}
+
+body {
+  background: #0a0a0a;
+  color: white;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #a328a9;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: #4b2e7e;
+}
+a.gradient {
+  background: linear-gradient(45deg, #a328a9, #4b2e7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fwm {
+  font-weight: 500;
+}
+
+.fwsb {
+  font-weight: 600;
+}
+
+.bottom_margin {
+  margin-bottom: 1rem;
+}
+
+hgroup * {
+  margin: auto 0;
+}
+hgroup > :nth-child(2) {
+  color: #73828c;
+  font-weight: normal;
+  margin-top: 4px;
+}
+
+img.icon {
+  height: 1.2rem;
+  transform: translateY(-2px);
+}
+
+.caption {
+  margin: 60px auto;
+  font-family: "Fira Code", serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.mid-corner-gradient {
+  z-index: -120;
+  width: 90vw;
+  height: 50vh;
+  background: radial-gradient(circle at top, rgba(0, 212, 255, 0.4) 0%, rgba(4, 125, 190, 0.4) 25%, rgba(9, 9, 121, 0) 50%, rgba(9, 9, 121, 0) 100%);
+  position: fixed;
+  transform: scale(1.9, 1) translateX(5vw);
+  right: 0;
+}
+
+.corner-gradient {
+  z-index: -40;
+  width: 90vw;
+  height: 50vh;
+  background: radial-gradient(circle at top, rgba(191, 0, 255, 0.4) 0%, rgba(112, 4, 190, 0.4) 25%, rgba(9, 9, 121, 0) 50%, rgba(9, 9, 121, 0) 100%);
+  position: fixed;
+  transform: scale(1.9, 1) translateX(15vw);
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .mid-corner-gradient {
+    width: 80vw;
+    height: 50vh;
+    transform: scale(1.9, 1) translateX(5vw);
+  }
+  .corner-gradient {
+    width: 80vw;
+    height: 50vh;
+    transform: scale(1.9, 1) translateX(15vw);
+  }
+}
+@media (min-width: 1024px) {
+  .mid-corner-gradient {
+    width: 75vw;
+    height: 50vh;
+    transform: scale(1.9, 1) translateX(5vw);
+  }
+  .corner-gradient {
+    width: 75vw;
+    height: 50vh;
+    transform: scale(1.9, 1) translateX(15vw);
+  }
+}
+.card {
+  padding: 3rem;
+  width: 90%;
+  background-color: #1E1E1E;
+  border-radius: 12px;
+  position: relative;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  color: #fff;
+  margin: 40px auto;
+  background-image: linear-gradient(145deg, #412448 0%, #1b2028 10%, #1b2028 100%);
+}
+.card::before {
+  content: "";
+  display: block;
+  top: -3px;
+  left: -3px;
+  bottom: -3px;
+  right: -3px;
+  z-index: -22;
+  position: absolute;
+  border-radius: 12px;
+  background-image: linear-gradient(165deg, #a328a9, #4b2e7e 20%, #1b2028 30%, #3a3a3a 100%);
+}
+.card .content {
+  position: relative;
+  height: 300px;
+  padding: 3rem;
+}
+@media screen and (max-width: 588px) {
+  .card .content {
+    height: 320px;
+  }
+}
+
+.fimg {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media screen and (max-width: 960px) {
+  .fimg img {
+    display: none;
+  }
+}
+.fimg img {
+  border-radius: 0 12px 12px 0;
+}
+.fimg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%; /* Adjust the width of the gradient as needed */
+  height: 100%;
+  background: linear-gradient(to right, #1b2028, rgba(27, 32, 40, 0)); /* Adjust the colors and opacity as needed */
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.2em 0.5em 0.3em;
+  background: var(--tag-bg);
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 0.25em 0.1em;
+  transform: translateY(-3px);
+}
+
+.tagnew {
+  color: #fff;
+  background-image: linear-gradient(90deg, #00b072, #00b096);
+  font-weight: 700;
+}
+
+.tagsm {
+  font-size: 0.7em;
+  display: inline-block;
+  letter-spacing: 0.15ch;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=modern.css.map */

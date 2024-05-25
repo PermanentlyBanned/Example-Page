@@ -1,0 +1,12 @@
+main {
+    padding-top: 0 !important;
+}
+
+.side-icon {
+    height: 22px;
+    transform: translateY(-1.5px);
+}
+
+.no-underline {
+    text-decoration: none;
+}
